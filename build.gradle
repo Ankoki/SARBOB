@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group = 'us.byeol'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.kenzie.mx/releases' }
+}
+
+dependencies {
+    implementation 'mx.kenzie:argo:1.2.2'
+}
