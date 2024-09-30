@@ -23,23 +23,37 @@ public class Main {
                         ((List<String>) map.getOrDefault("tags", new ArrayList<String>())).toArray(new String[0])));
             }
             Week week = Generator.generateWeek(Shift.getWeekOutline(), employees.toArray(new Employee[0]));
-            for (Day day : week) {
+            for (int i = 0; i < week.size(); i++) {
+                int numeration = 0;
+                Day day = null;
+                while (true) {
+                    day = week.get(numeration);
+                    if (DayEnum.valueOf(day.toString().toUpperCase()).ordinal() == i)
+                        break;
+                    else
+                        numeration++;
+                }
                 System.out.println();
                 System.out.println(day);
-                for (Shift shift : day) {
+                for (Shift shift : day)
                     System.out.println(shift.getEmployee() + " " + shift.getStart() + "-" + shift.getEnd() + ".");
-                    System.out.println(shift.getLength() + " Hours.");
-                    if (shift.getEmployee() != null)
-                        System.out.println("£" + shift.getEmployee().getHourly() * shift.getLength());
-                    System.out.println();
-                }
                 System.out.println();
             }
             System.out.println("£" + week.getWeekCost() + " / £" + week.getBudget());
             System.out.println();
             for (Employee employee : employees)
-                System.out.println(employee + "[" + employee.getEmployeeId() + "] - " + employee.getHoursScheduled());
+                System.out.println(employee + " - " + employee.getHoursScheduled() + " Hours");
         }
+    }
+
+    public enum DayEnum {
+        SUNDAY,
+        MONDAY,
+        TUESDAY,
+        WEDNESDAY,
+        THURSDAY,
+        FRIDAY,
+        SATURDAY;
     }
 
 }

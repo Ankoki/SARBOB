@@ -1,16 +1,17 @@
 {
   "employees": [
-    {"full-name": "Ella McVeigh", "employee-id": "01222058", "contracted-hours": 30, "hourly": 11.68, "tags": []},
-    {"full-name": "Maddy Davies", "employee-id": "01234567", "contracted-hours": 30, "hourly": 12.50, "tags": ["KH"]},
-    {"full-name": "Ollie Something", "employee-id": "01222058", "contracted-hours": 50, "hourly": 11.68, "tags": ["KH"]},
-    {"full-name": "Cian Something", "employee-id": "01222058", "contracted-hours": 20, "hourly": 11.68, "tags": []},
-    {"full-name": "Lily Something", "employee-id": "01222058", "contracted-hours": 16, "hourly": 11.68, "tags": []},
-    {"full-name": "Jade Something", "employee-id": "01222058", "contracted-hours": 16, "hourly": 11.68, "tags": []},
-    {"full-name": "Grace Something", "employee-id": "01222058", "contracted-hours": 16, "hourly": 11.68, "tags": []},
-    {"full-name": "Liv Something", "employee-id": "01222058", "contracted-hours": 30, "hourly": 11.68, "tags": ["KH"]},
-    {"full-name": "Nat Something", "employee-id": "01222058", "contracted-hours": 30, "unavailable": ["Sunday PM", "Monday PM" ,"Tuesday PM", "Wednesday PM", "Thursday PM", "Friday PM", "Saturday PM", "Sunday AM", "Sunday PM"], "guaranteed": ["Monday 9.0-18.0", "Tuesday 9.0-18.0", "Wednesday 9.0-18.0", "Thursday 9.0-18.0", "Friday 9.0-18.0"], "hourly": 11.68, "tags": ["KH"]},
-    {"full-name": "Kaia Something", "employee-id": "01222058", "contracted-hours": 16, "hourly": 11.68, "tags": []},
-    {"full-name": "Riya Something", "employee-id": "01222058", "contracted-hours": 16, "hourly": 11.68, "tags": []}
+    {"full-name": "Lee G", "employee-id": "01222058", "contracted-hours": 50, "hourly": 0.0, "tags": ["KH"]},
+    {"full-name": "Will S", "employee-id": "01222058", "contracted-hours": 50, "hourly": 0.0, "tags": ["KH"]},
+    {"full-name": "Nat B", "employee-id": "01222058", "contracted-hours": 30, "unavailable": ["Sunday PM", "Monday PM" ,"Tuesday PM", "Wednesday PM", "Thursday PM", "Friday PM", "Saturday PM", "Sunday AM", "Sunday PM"], "guaranteed": ["Monday 9.0-18.0", "Tuesday 9.0-18.0", "Wednesday 9.0-18.0", "Thursday 9.0-18.0", "Friday 9.0-18.0"], "hourly": 11.68, "tags": ["KH"]},
+    {"full-name": "Maddy D", "employee-id": "01234567", "contracted-hours": 20, "hourly": 12.50, "tags": ["KH"]},
+    {"full-name": "Jay H", "employee-id": "01222058", "contracted-hours": 35, "hourly": 11.68, "tags": ["KH"]},
+    {"full-name": "Ethan D", "employee-id": "01222058", "contracted-hours": 35, "hourly": 11.68, "tags": ["KH"]},
+    {"full-name": "Ella M", "employee-id": "01222058", "contracted-hours": 20, "hourly": 11.68, "tags": []},
+    {"full-name": "Cian G", "employee-id": "01222058", "contracted-hours": 20, "hourly": 11.68, "tags": []},
+    {"full-name": "Kaia H", "employee-id": "01222058", "contracted-hours": 16, "hourly": 11.68, "tags": []},
+    {"full-name": "Grace H", "employee-id": "01222058", "contracted-hours": 20, "hourly": 11.68, "tags": []},
+    {"full-name": "Katie W", "employee-id": "01222058", "contracted-hours": 16, "hourly": 11.68, "tags": []},
+    {"full-name": "Ed T", "employee-id": "01222058", "contracted-hours": 16, "hourly": 11.68, "tags": []}
   ],
   "days": {
     "budget": 2500.0,
@@ -70,9 +71,9 @@
         {"type": "AM", "start": 9.0, "end": 18.0, "length": 9.0, "tags": ["KH"]},
         {"type": "AM", "start": 12.0, "end": 18.0, "length": 6.0, "tags": []},
         {"type": "AM", "start": 12.0, "end": 20.0, "length": 8.0, "tags": []},
-        {"type": "PM", "start": 5.0, "end": 2.3, "length": 9.3, "tags": ["KH"]},
-        {"type": "PM", "start": 7.3, "end": 2.3, "length": 7.0, "tags": []},
-        {"type": "PM", "start": 6.0, "end": 2.3, "length": 8.3, "tags": []}
+        {"type": "PM", "start": 17.0, "end": 2.3, "length": 9.3, "tags": ["KH"]},
+        {"type": "PM", "start": 19.3, "end": 2.3, "length": 7.0, "tags": []},
+        {"type": "PM", "start": 18.0, "end": 2.3, "length": 8.3, "tags": []}
       ]
     }
   }
