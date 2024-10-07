@@ -3,6 +3,7 @@ package us.byeol.sarbob;
 import mx.kenzie.argo.Json;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -34,7 +35,15 @@ public class Main {
                         numeration++;
                 }
                 System.out.println();
-                System.out.println(day);
+                String dayString = day.toString();
+                StringBuilder builder = new StringBuilder();
+                for (String word : dayString.split(" ")) {
+                    String[] split = word.split("");
+                    split[0] = split[0].toUpperCase();
+                    builder.append(String.join("", split)).append(" ");
+                }
+                builder.setLength(builder.length() - 1);
+                System.out.println(builder);
                 for (Shift shift : day)
                     System.out.println(shift.getEmployee() + " " + shift.getStart() + "-" + shift.getEnd() + ".");
                 System.out.println();
